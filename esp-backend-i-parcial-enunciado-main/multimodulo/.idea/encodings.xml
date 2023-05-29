@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/api-examen/api-catalog/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-examen/api-catalog/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-examen/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-examen/api-movie/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-examen/api-movie/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-examen/configServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-examen/eurekaServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-examen/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-examen/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
