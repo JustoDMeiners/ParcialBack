@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/api-examen/api-catalog/api-catalog.iml" filepath="$PROJECT_DIR$/api-examen/api-catalog/api-catalog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api-examen/api-examen.iml" filepath="$PROJECT_DIR$/api-examen/api-examen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api-examen/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-examen/api-gateway/api-gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api-examen/api-movie/api-movie.iml" filepath="$PROJECT_DIR$/api-examen/api-movie/api-movie.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api-examen/configServer/configServer.iml" filepath="$PROJECT_DIR$/api-examen/configServer/configServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api-examen/eurekaServer/eurekaServer.iml" filepath="$PROJECT_DIR$/api-examen/eurekaServer/eurekaServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/multimodulo.iml" filepath="$PROJECT_DIR$/.idea/multimodulo.iml" />
     </modules>
   </component>

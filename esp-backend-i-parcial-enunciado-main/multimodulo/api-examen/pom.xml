@@ -37,6 +37,9 @@
 		<module>
 			eurekaServer
 		</module>
+		<module>api-series</module>
+
+
 	</modules>
 
 
