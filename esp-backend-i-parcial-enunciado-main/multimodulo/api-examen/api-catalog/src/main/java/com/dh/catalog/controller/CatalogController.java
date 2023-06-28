@@ -23,15 +23,15 @@ public class CatalogController {
 		this.serieServiceClient = serieServiceClient;
 	}
 
-	@GetMapping("/{genre}")
+	@GetMapping("/movies/{genre}")
 	ResponseEntity<List<MovieServiceClient.MovieDto>> getGenre(@PathVariable String genre) {
-		return ResponseEntity.ok(movieServiceClient.getMovieByGenre(genre));
+		return ResponseEntity.ok(movieServiceClient.getMovieByGenre());
 	}
 
 
-	@GetMapping("/{genre}")
+	@GetMapping("/series/{genre}")
 	ResponseEntity<List<SerieServiceClient.SerieDto>> getGenreSerie(@PathVariable String genre) {
-		return ResponseEntity.ok(serieServiceClient.getSerieByGenre(genre));
+		return ResponseEntity.ok(serieServiceClient.getSerieByGenre());
 	}
 
 }
