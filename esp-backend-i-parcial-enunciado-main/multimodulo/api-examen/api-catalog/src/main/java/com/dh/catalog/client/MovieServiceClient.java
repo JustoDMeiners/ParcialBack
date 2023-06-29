@@ -14,7 +14,7 @@ import java.util.List;
 public interface MovieServiceClient {
 
     @PostMapping("/movies")
-    void createMovie(@RequestBody Movie movie);
+    void createMovie(@RequestBody MovieDto movie);
 
 	@GetMapping("/api/v1/movies/{genre}")
 	List<MovieDto> getMovieByGenre();
