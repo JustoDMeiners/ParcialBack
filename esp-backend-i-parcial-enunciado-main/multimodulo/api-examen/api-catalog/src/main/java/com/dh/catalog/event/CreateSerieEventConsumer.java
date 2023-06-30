@@ -1,6 +1,7 @@
 package com.dh.catalog.event;
 
 
+import com.dh.catalog.client.MovieServiceClient;
 import com.dh.catalog.client.SerieServiceClient;
 import com.dh.catalog.config.RabbitMQConfig;
 import com.dh.catalog.model.serie.Serie;
@@ -28,10 +29,7 @@ public class CreateSerieEventConsumer {
         System.out.print("NOMBRE DE SERIE"+ message.getName());
         //procesamiento
 
-        Serie serie = new Serie();
-        serie.setName(message.getName());
-        serie.setGenre((message.getGenre()));
-        serieService.save(serie);
+        serieService.registerSerie(SerieServiceClient.SerieDto.builder().name(message.getName()).genre(message.getGenre()).build());
 
 
     }

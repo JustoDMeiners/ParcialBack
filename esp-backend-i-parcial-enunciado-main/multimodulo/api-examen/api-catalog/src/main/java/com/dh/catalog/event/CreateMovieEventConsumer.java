@@ -25,13 +25,10 @@ public class CreateMovieEventConsumer {
     }
 
     @RabbitListener(queues = RabbitMQConfig.QUEUE_MOVIE_CREATE)
-    public void listen(CreateMovieEventConsumer.Data message){
+    public void listen(Movie message){
         System.out.print("NOMBRE DE PELICULA "+ message.getName());
         //procesamiento
-        Movie movie = new Movie();
-        movie.setName(message.getName());
-        movie.setGenre((message.getGenre()));
-        movieService.save(movie);
+        movieService.registerMovie(MovieServiceClient.MovieDto.builder().name(message.getName()).genre(message.getGenre()).build());
     }
 
     @AllArgsConstructor

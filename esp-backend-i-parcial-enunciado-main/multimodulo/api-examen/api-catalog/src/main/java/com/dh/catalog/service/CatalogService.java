@@ -9,6 +9,7 @@ import com.dh.catalog.model.movie.Movie;
 import com.dh.catalog.model.serie.Serie;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -49,6 +50,12 @@ public class CatalogService {
     public List<SerieServiceClient.SerieDto> getSeriesByGenre(String genre) {
         return serieServiceFeignClient.getSerieByGenre();
     }
+
+
+
+
+
+
 
 
 

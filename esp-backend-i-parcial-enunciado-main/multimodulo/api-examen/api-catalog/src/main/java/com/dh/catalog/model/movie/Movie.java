@@ -14,10 +14,11 @@ import javax.persistence.GenerationType;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Movie {
 
     @Id
-    private String id;
+    private Long id;
     private String name;
     private String genre;
 }

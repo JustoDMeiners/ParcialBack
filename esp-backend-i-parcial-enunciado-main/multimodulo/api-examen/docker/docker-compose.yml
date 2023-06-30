@@ -31,15 +31,15 @@ services:
     container_name: mongo-container-catalog
     restart: on-failure
     environment:
-      MONGO_INITDB_DATABASE: 'catalog'
-      MONGO_INITDB_ROOT_USERNAME: 'usr-catalog-mongo'
-      MONGO_INITDB_ROOT_PASSWORD: 'pwd-catalog-mongo'
+      MONGO_INITDB_DATABASE: 'final'
+      MONGO_INITDB_ROOT_USERNAME: 'usr-inscription-mongo'
+      MONGO_INITDB_ROOT_PASSWORD: 'pwd-inscription-mongo'
     ports:
       - 27026:27017
     expose:
       - 27026
     volumes:
-      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init-catalog.js:ro
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
   zipkin-server-container:
     image: openzipkin/zipkin-slim
     container_name: zipkin-server-container
